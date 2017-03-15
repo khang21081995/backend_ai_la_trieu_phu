@@ -6,11 +6,13 @@
 var Model = require('./model');
 module.exports = {
     findAll: function (req, res) {
-        Model.find({level:1}).exec(function (err, data) {
+        Model.aggregate(
+            [{$sample: {size: 15}}]
+        ).exec(function (err, data) {
             if (!err) {
                 console.log(data);
                 var jsonEnd = {
-                    questions:data
+                    questions: data
                 }
                 res.json(jsonEnd);
             }

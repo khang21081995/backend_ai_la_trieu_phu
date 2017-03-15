@@ -67,7 +67,7 @@ $(document).ready(function () {
                     "d": D
                 },
                 "choice": answer,
-                "level": level
+                "level": 1
             });
             console.log(data);
             var msgElement = document.getElementById("message");
