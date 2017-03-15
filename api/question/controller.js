@@ -22,7 +22,7 @@ module.exports = {
         // console.log("Req.body: " + req.body);
         if (req.body.description && req.body.answers.a && req.body.answers.b && req.body.answers.c && req.body.answers.d && req.body.choice && req.body.level) {
             {
-                Model.findOne({question: req.body.question}).exec(function (err, data) {
+                Model.findOne({description: req.body.description}).exec(function (err, data) {
                     if (data) {
                         res.json({status: false, message: "Question are already exist!"});
                     } else {
