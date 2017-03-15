@@ -80,6 +80,13 @@ $(document).ready(function () {
                 console.log(response);
                 if (response.status) {
                     msgElement.innerHTML = response.message;
+                    question.innerHTML = "";
+                    A.innerHTML = "";
+                    B.innerHTML = "";
+                    C.innerHTML = "";
+                    D.innerHTML = "";
+                    answer.innerHTML = "";
+
                 } else {
                     msgElement.innerHTML = response.message;
                 }
