@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var question = new Schema({
-    question: {
+    description: {
         type: String, required: true, default: 'Hello world'
     },
     answers: {
