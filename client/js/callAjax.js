@@ -57,7 +57,7 @@ $(document).ready(function () {
             var C = document.getElementById("txtC").value;
             var D = document.getElementById("txtD").value;
             var answer = document.getElementById("txtAnswer").value;
-            var level = document.getElementById("txtLevel").value;
+            // var level = document.getElementById("txtLevel").value;
             var data = JSON.stringify({
                 "description": question,
                 "answers": {
