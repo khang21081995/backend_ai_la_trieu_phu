@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{Ai_La_Trieu_Phu_backend node_modules}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>
