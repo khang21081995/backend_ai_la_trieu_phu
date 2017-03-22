@@ -10,7 +10,6 @@ module.exports = {
             [{$sample: {size: 15}}]
         ).exec(function (err, data) {
             if (!err) {
-                console.log(data);
                 var jsonEnd = {
                     questions: data
                 }
@@ -40,7 +39,7 @@ module.exports = {
                             choice: req.body.choice,
                             level: req.body.level
                         }
-                        console.log(newQuestion);
+                        // console.log(newQuestion);
                         Model.create(newQuestion, function (err, data) {
                             if (!err)
                                 res.json({status: true, message: "Success"});
