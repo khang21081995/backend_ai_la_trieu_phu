@@ -57,9 +57,5 @@ module.exports = {
             res.json({status: false, message: "Undefine"});
         }
     }
-    ,
-    wellcome: function (req, res) {
-        console.log("Well come");
-        res.end("Well come");
-    }
+   
 }
