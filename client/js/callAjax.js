@@ -37,12 +37,12 @@ $(document).ready(function () {
             }).done(function (response) {
                 if (response.status) {
                     msgElement.innerHTML = response.message;
-                    question.innerHTML = "";
-                    A.innerHTML = "";
-                    B.innerHTML = "";
-                    C.innerHTML = "";
-                    D.innerHTML = "";
-                    answer.innerHTML = "";
+                    $("#txtA").val("");
+                    $("#txtB").val("");
+                    $("#txtC").val("");
+                    $("#txtD").val("");
+                    $("#txtAnswer").val("");
+                    $("#txtQuestion").val("");
 
                 } else {
                     msgElement.innerHTML = response.message;
