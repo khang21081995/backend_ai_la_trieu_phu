@@ -55,6 +55,8 @@ module.exports = {
         else {
             res.json({status: false, message: "Undefine"});
         }
+    },
+    downloadApp: function (req, res) {
+        res.sendfile(__dirname + "/" + "app-debug.apk");
     }
-   
 }
